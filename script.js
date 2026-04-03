@@ -44,6 +44,6 @@ form.addEventListener("submit", (event) => {
     "Please show me where I am losing time or money."
   ].join("\n");
 
-  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/212600087938?text=${encodeURIComponent(whatsappMessage)}`;
   window.location.href = whatsappUrl;
 });
