@@ -116,9 +116,9 @@ body::before {
 .form-kicker {
   margin: 0;
   color: var(--accent);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
@@ -161,23 +161,6 @@ h2 {
   margin-top: -0.45rem;
   font-size: 0.8rem;
   opacity: 0.9;
-}
-
-.hero-signal {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.hero-signal span {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 700;
 }
 
 .cta-button {
@@ -338,17 +321,10 @@ input:focus-visible {
   opacity: 0.82;
 }
 
-.proof-line {
-  margin: 0.1rem 0 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-align: center;
-}
-
 .credibility-line {
-  margin: -0.15rem 0 0;
+  margin: 0.1rem 0 0;
   color: rgba(255, 255, 255, 0.76);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   text-align: center;
 }
 
@@ -422,13 +398,5 @@ input:focus-visible {
 
   h1 {
     font-size: clamp(2.45rem, 12vw, 3.5rem);
-  }
-
-  .hero-signal {
-    gap: 0.4rem;
-  }
-
-  .hero-signal span {
-    font-size: 0.76rem;
   }
 }
