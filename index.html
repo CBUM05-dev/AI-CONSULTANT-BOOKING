@@ -24,7 +24,7 @@
             Get my free AI audit (15 min)
           </a>
           <p class="hero-note">No commitment - just actionable insights</p>
-          <p class="hero-note hero-note-secondary">Takes less than 30 seconds</p>
+          <p class="hero-note hero-note-secondary">Takes about a minute</p>
         </div>
       </section>
 
@@ -37,6 +37,12 @@
       </section>
 
       <section class="form-section" aria-labelledby="form-title">
+        <div class="form-steps" aria-hidden="true">
+          <span class="form-step is-active" data-step="1">1</span>
+          <span class="form-step-line"></span>
+          <span class="form-step" data-step="2">2</span>
+        </div>
+
         <form id="audit-form" novalidate>
           <div class="form-heading">
             <p class="form-kicker">Limited spots</p>
@@ -54,14 +60,74 @@
             <input id="phone" name="phone" type="tel" autocomplete="tel" required>
           </label>
 
-          <p class="form-note">We redirect you to WhatsApp after you submit.</p>
+          <p class="form-note">Next: 4 quick questions so we can prepare your audit.</p>
           <p class="form-error" id="form-error" aria-live="polite"></p>
 
           <button class="cta-button submit-button" type="submit">
-            Get my free AI audit (15 min)
+            Continue
           </button>
 
           <p class="credibility-line">We help businesses reduce costs and increase revenue using AI systems</p>
+        </form>
+
+        <form id="audit-form-details" novalidate hidden>
+          <button type="button" class="back-link" id="back-to-step-1">&larr; Back</button>
+
+          <div class="form-heading">
+            <p class="form-kicker">Almost done &middot; 30 seconds</p>
+            <h2>Tell us about your business</h2>
+            <p class="form-lead">The more we know, the sharper your audit will be.</p>
+          </div>
+
+          <label class="field">
+            <span>What does your business do?</span>
+            <input id="activity" name="activity" type="text" placeholder="e.g. Dental clinic, e-commerce, real estate agency" required>
+          </label>
+
+          <div class="field">
+            <span>Team size</span>
+            <div class="chip-group" role="radiogroup" data-name="teamSize" data-mode="single" aria-label="Team size">
+              <button type="button" class="chip" data-value="Just me">Just me</button>
+              <button type="button" class="chip" data-value="2-10">2-10</button>
+              <button type="button" class="chip" data-value="11-50">11-50</button>
+              <button type="button" class="chip" data-value="50+">50+</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <span>Where are you losing the most time? <em class="field-hint">pick up to 3</em></span>
+            <div class="chip-group" role="group" data-name="painPoints" data-mode="multi" data-max="3" aria-label="Pain points">
+              <button type="button" class="chip" data-value="Admin &amp; paperwork">Admin &amp; paperwork</button>
+              <button type="button" class="chip" data-value="Customer support">Customer support</button>
+              <button type="button" class="chip" data-value="Sales &amp; follow-ups">Sales &amp; follow-ups</button>
+              <button type="button" class="chip" data-value="Data entry">Data entry</button>
+              <button type="button" class="chip" data-value="Scheduling">Scheduling</button>
+              <button type="button" class="chip" data-value="Reporting">Reporting</button>
+              <button type="button" class="chip" data-value="Content &amp; marketing">Content &amp; marketing</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <span>Your #1 goal</span>
+            <div class="chip-group" role="radiogroup" data-name="goal" data-mode="single" aria-label="Main goal">
+              <button type="button" class="chip" data-value="Save time">Save time</button>
+              <button type="button" class="chip" data-value="Cut costs">Cut costs</button>
+              <button type="button" class="chip" data-value="Grow revenue">Grow revenue</button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>Biggest headache right now? <em class="field-hint">optional</em></span>
+            <textarea id="headache" name="headache" rows="2" placeholder="One thing you wish was automated"></textarea>
+          </label>
+
+          <p class="form-error" id="form-error-2" aria-live="polite"></p>
+
+          <button class="cta-button submit-button" type="submit">
+            Get my free AI audit
+          </button>
+
+          <p class="credibility-line">We reply on WhatsApp within minutes</p>
         </form>
       </section>
     </div>
